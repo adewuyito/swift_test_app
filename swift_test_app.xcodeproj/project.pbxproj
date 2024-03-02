@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		086574B72B92C32C0012048D /* swift_test_app */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swift_test_app; sourceTree = BUILT_PRODUCTS_DIR; };
 		086574BA2B92C32C0012048D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		086574C12B92C4160012048D /* swift_test_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swift_test_app.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		086574B92B92C32C0012048D /* swift_test_app */ = {
 			isa = PBXGroup;
 			children = (
+				086574C12B92C4160012048D /* swift_test_app.entitlements */,
 				086574BA2B92C32C0012048D /* main.swift */,
 			);
 			path = swift_test_app;
@@ -98,7 +100,7 @@
 				};
 			};
 			buildConfigurationList = 086574B22B92C32C0012048D /* Build configuration list for PBXProject "swift_test_app" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -248,6 +250,8 @@
 		086574BF2B92C32C0012048D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = swift_test_app/swift_test_app.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DK55SZ3YAY;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -259,6 +263,8 @@
 		086574C02B92C32C0012048D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = swift_test_app/swift_test_app.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DK55SZ3YAY;
 				ENABLE_HARDENED_RUNTIME = YES;

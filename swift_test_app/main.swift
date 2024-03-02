@@ -7,5 +7,5 @@
 
 import Foundation
 
-print("Hello, World!")
+print("Hello, World this is a new swift project!")
 
